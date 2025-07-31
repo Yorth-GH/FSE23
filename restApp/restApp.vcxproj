@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{AE9C6BE3-FB7C-4730-A109-A601F683DD8A}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>restApp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\x64</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\dbase.cpp" />
+    <ClCompile Include="ArticleItem.cpp" />
+    <ClCompile Include="ArticleOrderedItem.cpp" />
+    <ClCompile Include="AuthForm.cpp" />
+    <ClCompile Include="CreateArticleForm.cpp" />
+    <ClCompile Include="DeleteProfileForm.cpp" />
+    <ClCompile Include="EditArticleForm.cpp" />
+    <ClCompile Include="LoginForm.cpp" />
+    <ClCompile Include="MainForm.cpp" />
+    <ClCompile Include="MainMenuAdminForm.cpp" />
+    <ClCompile Include="MainMenuForm.cpp" />
+    <ClCompile Include="MakeOrderArticleItem.cpp" />
+    <ClCompile Include="MakeOrderForm.cpp" />
+    <ClCompile Include="MyMenuForm.cpp" />
+    <ClCompile Include="OrderItem.cpp" />
+    <ClCompile Include="OrdersForm.cpp" />
+    <ClCompile Include="ProfileForm.cpp" />
+    <ClCompile Include="ReceiptForm.cpp" />
+    <ClCompile Include="RegisterForm.cpp" />
+    <ClCompile Include="ResourceItem.cpp" />
+    <ClCompile Include="ResourcesForm.cpp" />
+    <ClCompile Include="restApp.cpp" />
+    <ClCompile Include="RestaurantAdminView.cpp" />
+    <ClCompile Include="SendOrderForm.cpp" />
+    <ClCompile Include="StatisticsForm.cpp" />
+    <ClCompile Include="UsedResourceItem.cpp" />
+    <ClCompile Include="WorkerResourcesForm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArticleItem.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="ArticleOrderedItem.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="AuthForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CreateArticleForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="DeleteProfileForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EditArticleForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="LoginForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MainForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MainMenuAdminForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MainMenuForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MakeOrderArticleItem.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="MakeOrderForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyMenuForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OrderItem.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="OrdersForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ProfileForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ReceiptForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="RegisterForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ResourceItem.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="ResourcesForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="RestaurantAdminView.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SendOrderForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StatisticsForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UsedResourceItem.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="WorkerResourcesForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ArticleItem.resx">
+      <DependentUpon>ArticleItem.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArticleOrderedItem.resx">
+      <DependentUpon>ArticleOrderedItem.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthForm.resx">
+      <DependentUpon>AuthForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateArticleForm.resx">
+      <DependentUpon>CreateArticleForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteProfileForm.resx">
+      <DependentUpon>DeleteProfileForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditArticleForm.resx">
+      <DependentUpon>EditArticleForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuAdminForm.resx">
+      <DependentUpon>MainMenuAdminForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuForm.resx">
+      <DependentUpon>MainMenuForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakeOrderArticleItem.resx">
+      <DependentUpon>MakeOrderArticleItem.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakeOrderForm.resx">
+      <DependentUpon>MakeOrderForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMenuForm.resx">
+      <DependentUpon>MyMenuForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderItem.resx">
+      <DependentUpon>OrderItem.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersForm.resx">
+      <DependentUpon>OrdersForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileForm.resx">
+      <DependentUpon>ProfileForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiptForm.resx">
+      <DependentUpon>ReceiptForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceItem.resx">
+      <DependentUpon>ResourceItem.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourcesForm.resx">
+      <DependentUpon>ResourcesForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RestaurantAdminView.resx">
+      <DependentUpon>RestaurantAdminView.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendOrderForm.resx">
+      <DependentUpon>SendOrderForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsForm.resx">
+      <DependentUpon>StatisticsForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsedResourceItem.resx">
+      <DependentUpon>UsedResourceItem.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkerResourcesForm.resx">
+      <DependentUpon>WorkerResourcesForm.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="restApp.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Downloads\lol.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
